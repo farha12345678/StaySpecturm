@@ -59,10 +59,10 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-xs dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box  lg:w-52">
                             <div className="">
                                             <div className="menu menu-horizontal   lg:px-1">
-                                                <Link className="text-blue-500 text-xl font-semibold" to='/update'>Update Profile</Link>
+                                                <Link className="text-blue-500 text-xl lg:font-semibold" to='/update'>Update Profile</Link>
                                             </div>
                                             <div className="menu menu-horizontal  lg:px-1">
-                                                <Link className="text-blue-500 text-xl lg:ml-2 font-semibold" onClick={handleLogOut}>Log Out</Link>
+                                                <Link className="text-blue-500 text-xl lg:ml-2 lg:font-semibold" onClick={handleLogOut}>Log Out</Link>
                                             </div>
 
                                             <div className="w-8 rounded-full" >
