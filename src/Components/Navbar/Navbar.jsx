@@ -16,11 +16,13 @@ const Navbar = () => {
 
     }
     const links = <>
+    <NavLink className={({isActive}) => isActive? 'text-blue-500 underline text-xl lg:px-4 font-semibold': 'text-blue-500 text-xl font-semibold lg:px-1'} to="/">Home</NavLink>
+    <NavLink className={({isActive}) => isActive? 'text-blue-500 underline text-xl lg:px-4 font-semibold': 'text-blue-500 text-xl font-semibold lg:px-1'} to="/login">Log In</NavLink>
+    <NavLink className={({isActive}) => isActive? 'text-blue-500 underline text-xl lg:px-4  font-semibold': 'text-blue-500 text-xl font-semibold lg:px-1'} to="register">Register</NavLink>
+    <NavLink className={({isActive}) => isActive? 'text-blue-500 underline text-xl lg:px-4 font-semibold': 'text-blue-500 text-xl font-semibold lg:px-1'} to="contact">Contact Us</NavLink>
+    
 
-        <NavLink to='/'><li className=" text-blue-500 mr-4 text-xl font-semibold">Home</li></NavLink>
-        <NavLink to='/login'><li className="  text-blue-500 mr-4 text-xl font-semibold">Log In</li></NavLink>
-        <NavLink to='/register'><li className="  text-blue-500   mr-4 text-xl font-semibold">Register</li></NavLink>
-        <NavLink to='/contact'><li className=" text-blue-500 mr-4 text-xl font-semibold">Contact Us</li></NavLink>
+        
 
 
 
@@ -43,7 +45,7 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     <div className="hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1">
+                        <ul className="menu  menu-horizontal px-1">
                             {links}
                         </ul>
                     </div>
@@ -57,7 +59,7 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-xs dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box  lg:w-52">
                             <div className="">
                                             <div className="menu menu-horizontal   lg:px-1">
-                                                <Link className="text-blue-500 text-xl font-semibold" to='/update'>Updat Profile</Link>
+                                                <Link className="text-blue-500 text-xl font-semibold" to='/update'>Update Profile</Link>
                                             </div>
                                             <div className="menu menu-horizontal  lg:px-1">
                                                 <Link className="text-blue-500 text-xl lg:ml-2 font-semibold" onClick={handleLogOut}>Log Out</Link>
@@ -66,7 +68,7 @@ const Navbar = () => {
                                             <div className="w-10 rounded-full" >
                                                 <div className="tooltip  tooltip-bottom" data-tip={user.displayName}>
 
-                                                  <Link to='/user'>  <img className="tooltip tooltip-open tooltip-bottom " data-tip={user.displayName} alt="Tailwind CSS Navbar component" src={user ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} /></Link>
+                                                  <Link to='/user'>  <img className="tooltip tooltip-open tooltip-bottom " data-tip={user?user.displayName : 'user not found'} alt="Tailwind CSS Navbar component" src={user ? user .photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} /></Link>
                                                 </div>
                                                 <div>
 
