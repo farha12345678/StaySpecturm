@@ -53,11 +53,11 @@ const Navbar = () => {
                         user ?
                             <>
                             <div className="dropdown ">
-                        <div tabIndex={0} role="button" className="btn md:hidden btn-ghost lg:hidden">
+                        {/* <div tabIndex={0} role="button" className="btn md:hidden btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabIndex={0} className="menu menu-xs dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box  lg:w-52">
-                            <div className="">
+                        </div> */}
+                        {/* <ul tabIndex={0} className="menu menu-xs dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box  lg:w-52"> */}
+                            {/* <div className="">
                                             <div className="menu menu-horizontal   lg:px-1">
                                                 <Link className="text-blue-500 text-xl lg:font-semibold" to='/update'>Update Profile</Link>
                                             </div>
@@ -76,24 +76,24 @@ const Navbar = () => {
                                             </div>
 
                                         </div>
-                                    
-                        </ul>
+                                     */}
+                        {/* </ul> */}
                     </div>
                                
 
 {/*  */}
-                                        <div className="hidden md:flex lg:flex">
+                                        <div className="grid md:flex lg:flex">
                                             <div className="menu menu-horizontal   lg:px-1">
-                                                <Link className="text-blue-500 text-xl font-semibold" to='/update'>Update Profile</Link>
+                                                <Link className="text-blue-500 lg:text-xl text-sm font-semibold" to='/update'>Update Profile</Link>
                                             </div>
                                             <div className="menu menu-horizontal  lg:px-1">
-                                                <Link className="text-blue-500 text-xl lg:ml-2 font-semibold" onClick={handleLogOut}>Log Out</Link>
+                                                <Link className="text-blue-500 lg:text-xl text-sm lg:ml-2 font-semibold" onClick={handleLogOut}>Log Out</Link>
                                             </div>
 
-                                            <div className="w-10 rounded-full" >
-                                                <div className="tooltip  tooltip-bottom" data-tip={user.displayName}>
+                                            <div className="lg:w-10 md:w-10 w-10 rounded-full" >
+                                                <div className="tooltip  tooltip-bottom " data-tip={user.displayName}>
 
-                                                  <Link to='/user'>  <img className="tooltip tooltip-open tooltip-bottom " data-tip={user.displayName} alt="Tailwind CSS Navbar component" src={user ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} /></Link>
+                                                  <Link to='/user'>  <img className="tooltip rounded-full  tooltip-open tooltip-bottom " data-tip={user.displayName} alt="Tailwind CSS Navbar component" src={user ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} /></Link>
                                                 </div>
                                                 <div>
 

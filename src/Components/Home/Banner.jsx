@@ -13,7 +13,7 @@ import { Autoplay, Pagination} from 'swiper/modules';
 const Banner = () => {
 
     return (
-        <div className='mx-5 lg:ml-28 mt-10'>
+        <div className='lg:mx-5 lg:ml-28 mt-10'>
             <Swiper
                 spaceBetween={80}
                 centeredSlides={true}
