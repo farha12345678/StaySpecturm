@@ -65,7 +65,7 @@ const Navbar = () => {
                                                 <Link className="text-blue-500 text-xl lg:ml-2 font-semibold" onClick={handleLogOut}>Log Out</Link>
                                             </div>
 
-                                            <div className="w-10 rounded-full" >
+                                            <div className="w-8 rounded-full" >
                                                 <div className="tooltip  tooltip-bottom" data-tip={user.displayName}>
 
                                                   <Link to='/user'>  <img className="tooltip tooltip-open tooltip-bottom " data-tip={user?user.displayName : 'user not found'} alt="Tailwind CSS Navbar component" src={user ? user .photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} /></Link>
