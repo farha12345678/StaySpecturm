@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const EstateCard = ({data}) => {
-    const {id ,estate_title , image , segmant_name , description , location , status , price , area} = data;
+    const {id ,estate_title , image , segmant_name , description , location ,  price , area} = data;
     
     return (
         <div>
@@ -20,9 +20,17 @@ const EstateCard = ({data}) => {
                    <p className="border-2 rounded-md border-blue-400 bg-blue-100">{area}</p>
                     </div>
                     <div className="flex gap-x-40">
-                        <p className='border-2 rounded-md bg-blue-100 border-blue-400' >{status}</p>
+                    <p>For: <span className="border-2 rounded-md border-blue-400">{data.status}</span></p>
                         <p className="border-2 rounded-md bg-blue-100 border-blue-400">{price}</p>
                     </div>
+                     
+                    <p className="font-bold pb-2"> Facilities: 
+                            {
+                                data.facilities.map((facility , index) => (
+                                    <li className="text-blue-500" key={index}>{facility}</li>
+                                ))
+                            }
+                        </p>
                     <div className="card-actions">
                         <Link to={`/details/${id}`}><button className="btn bg-blue-500 text-white font-bold text-xl">View Property</button></Link>
                     </div>

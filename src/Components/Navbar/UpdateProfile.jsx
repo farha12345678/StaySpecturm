@@ -3,6 +3,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 import { Helmet } from "react-helmet-async";
 import { useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 const UpdateProfile = () => {
@@ -35,13 +36,17 @@ const UpdateProfile = () => {
         console.log(displayName , photoURL);
         updateUserProfile(displayName , photoURL)
         .then(()=> {
+            
             signInUser((prevUser)=> {
                 navigate(from)
+                
                 return {...prevUser , displayName : displayName , photoURL:photoURL }
+                
+                
             })
         })
         .catch(error=> {
-            console.log(error);
+            toast.error(error);
         })
     }
     
