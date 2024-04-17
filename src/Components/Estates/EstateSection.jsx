@@ -19,7 +19,7 @@ const [estate , setEstate] = useState([]);
                 <h1 className="font-bold text-5xl">Top Estates</h1>
                 <p className="mt-4">Here is our all top estates...</p>
             </div>
-             <div  className="grid lg:mx-20 lg:grid-cols-3 md:grid-cols-2">
+             <div  className="grid gap-y-10 lg:mx-20 lg:grid-cols-3 md:grid-cols-2">
                 {
                     estate.map(data => <EstateCard key={estate.id} data={data}></EstateCard> )
                 }

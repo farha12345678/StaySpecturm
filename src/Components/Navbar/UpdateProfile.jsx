@@ -27,7 +27,7 @@ const UpdateProfile = () => {
 
 
     const handleProfile = e => {
-        e.preventDefault();
+        
         const form = new FormData(e.currentTarget)
         const displayName = form.get('name')
         const photoURL = form.get('photo')
