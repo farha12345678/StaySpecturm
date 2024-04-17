@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import 'animate.css';
 import '../../index.css'
+import { Helmet } from "react-helmet-async";
 
 const EstateDetails = () => {
     const estates = useLoaderData()
@@ -9,6 +10,11 @@ const EstateDetails = () => {
     console.log(estate);
     return (
         <div>
+            <Helmet>
+                <title>
+                    StaySpecturm || Details
+                </title>
+            </Helmet>
             <div className="hero w-96 h-96 container md:mx-auto lg:mx-auto md:w-[600px] lg:w-[1100px] lg:h-72 md:h-[250px] rounded-3xl mb-10" style={{ backgroundImage: 'url(https://i.ibb.co/tzKD0pv/pexels-pixabay-261169.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
