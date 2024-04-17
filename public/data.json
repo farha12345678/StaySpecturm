@@ -1,0 +1,82 @@
+ [
+      {
+        "id": 1,
+        "estate_title": "Oceanfront Resort Villa",
+        "segment_name": "Resorts",
+        "image": "https://i.ibb.co/xmXs7Rj/pexels-boonkong-boonpeng-1134176.jpg",
+        "description": "Indulge in the epitome of luxury with our Oceanfront Resort Villa. Perched atop a cliff overlooking the azure waters of Maui, Hawaii, this exquisite villa offers unparalleled views and opulent amenities. Whether you're lounging by the infinity pool, rejuvenating at the private spa, or savoring gourmet cuisine, every moment promises bliss. With 4000 sq ft of elegantly appointed living space, including spacious bedrooms and sprawling lounges, comfort meets extravagance at every turn. Enjoy exclusive access to a private beach, where you can bask in the sun or embark on aquatic adventures. Your dream vacation awaits at our Oceanfront Resort Villa.",
+        "price": "$1000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Maui, Hawaii",
+        "facilities": ["Private Beach Access", "Infinity Pool", "Spa", "Gourmet Dining"],
+        "button": "View Property"
+      },
+      {
+        "id": 2,
+        "estate_title": "Ski Chalet Retreat",
+        "segment_name": "Lodges",
+        "image": "https://i.ibb.co/wQtgfRP/pexels-thiago-2410577.jpg",
+        "description": "Experience the ultimate winter getaway at our Ski Chalet Retreat in Whistler, British Columbia. Nestled amidst snow-capped peaks and evergreen forests, this charming chalet exudes warmth and coziness. After a day of exhilarating skiing, unwind by the crackling fireplace or soothe your muscles in the bubbling hot tub. With 2000 sq ft of inviting living space, including comfortable bedrooms and a spacious living area, there's plenty of room for relaxation. Enjoy the convenience of ski-in/ski-out access, allowing you to hit the slopes with ease. Whether you're seeking adventure or tranquility, our Ski Chalet Retreat offers the perfect mountain escape.",
+        "price": "$3000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Whistler, British Columbia",
+        "facilities": ["Fireplace", "Hot Tub", "Ski-In/Ski-Out Access"],
+        "button": "View Property"
+      },
+      {
+        "id": 3,
+        "estate_title": "City Center Boutique Hotel",
+        "segment_name": "Hotels",
+        "image": "https://i.ibb.co/fvg4n8V/pexels-pixabay-261102.jpg",
+        "description": "Discover urban luxury at our City Center Boutique Hotel in the vibrant heart of San Francisco, California. Situated amidst iconic landmarks and cultural attractions, this stylish hotel offers a chic retreat for discerning travelers. Immerse yourself in sophisticated surroundings and personalized service, where every detail is meticulously curated for your comfort. With 1500 sq ft of elegantly designed accommodations, including luxurious bedrooms and modern amenities, relaxation meets refinement at every turn. Indulge in gourmet cuisine at our onsite restaurant, or explore the city's vibrant culinary scene just steps away. Whether you're here for business or leisure, our City Center Boutique Hotel promises an unforgettable stay.",
+        "price": "$400 ",
+        "status": "rent",
+        "area": "1500 sq ft",
+        "location": "San Francisco, California",
+        "facilities": ["Fitness Center", "Restaurant", "Concierge Service"],
+        "button": "View Property"
+      },
+      {
+        "id": 4,
+        "estate_title": "Seaside Vacation Home",
+        "segment_name": "Vacation Rentals",
+        "image": "https://i.ibb.co/tzKD0pv/pexels-pixabay-261169.jpg",
+        "description": "Escape to coastal bliss with our Seaside Vacation Home in picturesque Cape Cod, Massachusetts. Nestled just steps from the sandy shores and rolling waves of the Atlantic Ocean, this charming retreat offers the perfect blend of relaxation and adventure. Whether you're soaking up the sun on the private patio, enjoying panoramic ocean views from the comfort of your living room, or whipping up culinary delights in the fully equipped kitchen, every moment promises tranquility. With 2500 sq ft of coastal-inspired living space, including spacious bedrooms and inviting common areas, there's ample room for families and friends to gather and create lasting memories. Experience the magic of Cape Cod at our Seaside Vacation Home.",
+        "price": "$500 ",
+        "status": "rent",
+        "area": "2500 sq ft",
+        "location": "Cape Cod, Massachusetts",
+        "facilities": ["Ocean Views", "Outdoor Patio", "Fully Equipped Kitchen"],
+        "button": "View Property"
+      },
+      {
+        "id": 5,
+        "estate_title": "Quaint Guesthouse Retreat",
+        "segment_name": "Guesthouses",
+        "image": "https://i.ibb.co/YyXt8zm/pexels-pixabay-271624.jpg",
+        "description": "Experience the charm of Provence, France, at our Quaint Guesthouse Retreat. Tucked away amidst rolling vineyards and lavender fields, this idyllic retreat offers a peaceful escape from the hustle and bustle of everyday life. Step into a world of rustic elegance, where each corner is adorned with vintage furnishings and pastoral accents. With 1000 sq ft of cozy living space, including comfortable bedrooms and a sun-drenched garden, relaxation comes naturally. Wake up to the aroma of freshly baked croissants and homemade jams served in the quaint breakfast nook. Whether you're exploring nearby villages or simply unwinding amidst nature's beauty, our Guesthouse Retreat promises a memorable stay.",
+        "price": "$150",
+        "status": "rent",
+        "area": "1000 sq ft",
+        "location": "Provence, France",
+        "facilities": ["Garden", "Homemade Breakfast", "WiFi"],
+        "button": "View Property"
+      },
+      {
+        "id": 6,
+        "estate_title": "Budget Motel Stay",
+        "segment_name": "Motels",
+        "image": "https://i.ibb.co/6JgMFBX/pexels-thorsten-technoman-338504.jpg",
+        "description":"Enjoy comfort and convenience without breaking the bank at our Budget Motel Stay on historic Route 66 in Arizona. Perfect for road-trippers and budget-conscious travelers, this no-frills motel offers clean and comfortable accommodations at an affordable price. Unwind in your cozy room equipped with modern amenities, including free WiFi and air conditioning, ensuring a comfortable stay. Whether you're exploring nearby attractions or simply passing through, our Budget Motel Stay provides a welcoming respite along your journey. With easy access to dining and entertainment options, as well as convenient parking, your road trip adventure begins here.",
+        "price": "$800 ",
+        "status": "rent",
+        "area": "500 sq ft",
+        "location": "Route 66, Arizona",
+        "facilities": ["Parking", "Free WiFi", "Air Conditioning"],
+        "button": "View Property"
+      }
+    ]
+  
+  
