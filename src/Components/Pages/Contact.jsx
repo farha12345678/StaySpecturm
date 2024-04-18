@@ -22,7 +22,7 @@ const Contact = () => {
                 </Helmet>
             </div>
             <div>
-            <div className="hero w-96 h-96 container mx-auto md:w-full lg:w-[1100px] lg:h-72 md:h-[250px] rounded-3xl mb-10" style={{ backgroundImage: 'url(https://i.ibb.co/tzKD0pv/pexels-pixabay-261169.jpg)' }}>
+            <div className="hero w-80 h-96 container mx-5 lg:mx-auto md:w-full lg:w-[1100px] lg:h-72 md:h-[250px] rounded-3xl mb-10" style={{ backgroundImage: 'url(https://i.ibb.co/tzKD0pv/pexels-pixabay-261169.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
             </div>
            </div> 
-           <div className="lg:w-full  grid lg:grid-cols-2">
+           <div className=" grid lg:grid-cols-2">
             {
                 contact.map((data)=> <ContactCard key={contact.id} data={data}></ContactCard>)
             }

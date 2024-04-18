@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 
 const UpdateProfile = () => {
 
-    const { updateUserProfile, signInUser } = useContext(AuthContext)
+    const { updateUserProfile, signInUser , user } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state || '/'  
@@ -51,17 +51,6 @@ const UpdateProfile = () => {
     }
     
 
-
-            // .then(() => {
-            //     updateUserProfile(displayName, photoURL)
-            //         .then(() => {
-                        
-
-            //         })
-
-            // })
-
-
     
 
 
@@ -86,15 +75,23 @@ const UpdateProfile = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="name" name="name" placeholder="Name" className="input input-bordered" required />
+                        <input type="name" name="name" placeholder={user.displayName} className="input input-bordered"  />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Photo URL</span>
                         </label>
-                        <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered" required />
+                        <input type="text" name="photo" placeholder={user.photoURL} className="input input-bordered"  />
 
                     </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Email</span>
+                        </label>
+                        <input type='email' disabled name="email" placeholder={user.email} className="input input-bordered" />
+
+                    </div>
+
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Update Profile</button>
                     </div>
