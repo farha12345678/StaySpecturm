@@ -51,7 +51,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                {/* user profile */}
+                
                 <div className="navbar-end ">
                     {
                         user ?
