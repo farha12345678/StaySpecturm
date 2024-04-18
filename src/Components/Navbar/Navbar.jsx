@@ -51,7 +51,7 @@ const {user , logOut} = useContext(AuthContext)
       </div>
         <Link to='/update'>Update Profile</Link>
      <Link to='/user'>Profile</Link>
-     <button>Log Out</button>
+     <button onClick={logOut}>Log Out</button>
       </ul>
     </div>
     <div className="navbar  hidden md:hidden lg:flex">
