@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
             </div>
            </div> 
-           <div className="lg:w-96">
+           <div className="lg:w-full  grid lg:grid-cols-2">
             {
                 contact.map((data)=> <ContactCard key={contact.id} data={data}></ContactCard>)
             }

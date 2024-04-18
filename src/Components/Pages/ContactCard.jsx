@@ -7,12 +7,12 @@ const ContactCard = ({data}) => {
            
             <div>
             <div className="hero">
-  <div className="hero-content flex-col lg:flex-row">
+  <div className="hero-content  flex-col lg:flex-row">
     <img src={image}className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">{name}</h1>
       <p className="py-6">{phone}</p>
-      <div className='flex gap-x-10'>
+      <div className=''>
         <p className='font-semibold text-black'>Position:<span className='text-blue-500'>{position}</span></p>
         <p>{email}</p>
       </div>
